@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    outline: 1px solid black;
+}
+
+
+.loader {
+    position: fixed;
+    width: 100vw;
+    height: 200vh;
+    pointer-events: none;
+    background-color: #FFF6ED;
+    z-index: 999999999;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.is-transitioning {
+    pointer-events: none;
+    cursor: progress;
+}
