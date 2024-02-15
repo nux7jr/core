@@ -12,13 +12,15 @@
     width: 100vw;
     height: 200vh;
     pointer-events: none;
-    /* background-color: #FFF6ED; */
     z-index: 999999999;
     visibility: hidden;
     opacity: 0;
 }
 
 .is-transitioning {
+    /* наддинг убрать в мобилке */
+    padding: 0 calc(20px - (100vw - 100%)) 0 0;
+    overflow: hidden;
     pointer-events: none;
     cursor: progress;
 }
