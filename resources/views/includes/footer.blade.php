@@ -8,7 +8,7 @@
        </div>
        <div class="flex-col flex border-t md:pt-6 pb-12 pt-8">
           <p class="text-slate-500 md:mt-0 mt-6 text-sm font-medium">
-             © 2023 Lexington Themes. All rights reserved. Lexington Themes is not affiliated with Astro or Tailwind Labs team, nor is it endorsed by or sponsored by this ones. A project by Michael Andreuzza, This website was built with Astro &amp; Tailwind. Crafted in Åland Islands, Finland.
+             © {{ now()->year }} TIKSAN GROUP
           </p>
        </div>
     </div>

@@ -4,7 +4,8 @@
    @include('includes.head')
 </head>
 <body>
-    <div class="loader"></div>
+
+    <div class="loader bg-wood-500"></div>
    <header>
        @include('includes.header')
    </header>

@@ -1,9 +1,12 @@
 import './bootstrap';
 import barba from '@barba/core';
 import { gsap } from "gsap";
-const loader = document.querySelector('.loader');
+import Alpine from 'alpinejs';
+import.meta.glob(["../images/**"]);
 
-gsap.set(loader, {
+const $loader = document.querySelector('.loader');
+
+gsap.set($loader, {
     scaleX: 0,
     rotation: 10,
     xPercent: -5,
@@ -14,7 +17,7 @@ gsap.set(loader, {
 
 function loaderAway() {
     // GSAP tween to hide loading screen
-    return gsap.to(loader, {
+    return gsap.to($loader, {
         duration: 0.8,
         scaleX: 0,
         xPercent: 5,
@@ -25,7 +28,7 @@ function loaderAway() {
 }
 function loaderIn() {
     // GSAP tween to stretch the loading screen across the whole screen
-    return gsap.fromTo(loader,
+    return gsap.fromTo($loader,
         {
             rotation: 10,
             scaleX: 0,
@@ -63,3 +66,7 @@ barba.init({
         }
     }]
 });
+
+window.Alpine = Alpine;
+
+Alpine.start()
