@@ -9,3 +9,6 @@ Route::get('/', function () {
 Route::get('/contacts', function () {
     return view('pages.contacts');
 });
+Route::get('/blog', function () {
+    return view('pages.blog');
+});
